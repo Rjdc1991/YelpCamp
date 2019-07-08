@@ -2,7 +2,7 @@ require('dotenv').config();
 var express = require("express"),
     app = express(),
     bodyParser = require("body-parser"),
-    mongoose = require("mongoose"),
+   // mongoose = require("mongoose"),
     flash=require("connect-flash"),
     LocalStrategy = require("passport-local"),
     Campground=require("./models/campgrounds"),
@@ -11,12 +11,25 @@ var express = require("express"),
     User= require("./models/user"),
     methodOverride = require("method-override"),
     passport = require("passport");
+
+const mongoose = require("mongoose");
+mongoose.connect("mongodb+srv://rjdc1991:chico55@yelp-f3tgn.mongodb.net/test?retryWrites=true&w=majority",{
+	
+	useNewUrlParser: true,
+	useCreateIndex: true
+}).then(() => {
+	
+		console.log("connected to DB!");
+}).catch(err => {
+	
+	console.log('ERROR', err.message);
+});
     
 var campgroundRoutes = require("./routes/campgrounds.js");
 var commentRoutes = require("./routes/comments.js");
 var indexRoutes = require("./routes/index.js");
     
-mongoose.connect("mongodb://localhost/yelp_camp_V9", { useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost/yelp_camp_V9", { useNewUrlParser: true });
 mongoose.set('useFindAndModify', false);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
