@@ -1,10 +1,11 @@
 <% include ./partials/header %>
 
-<div class="container">
-    <div class="row">
-
-        <h1 style="text-align:center">Login to YelpCamp</h1>
-        <div style="width:30%; margin:25px auto;">
+<div class="row justify-content-center">
+	<div class="col-md-12 text-center">
+		<h1 style="text-align:center">Login</h1>
+	</div>
+    
+<div class="col-9 col-md-3 col-lg-3">
             <form action="/login" method="POST">
                 <div class="form-group">
                     <input class="form-control" type="text" name="username" placeholder="username">
@@ -17,9 +18,15 @@
             </form>
                 <a href="/campgrounds">Go back!</a>
         </div>
-    </div>
+    
 </div>
 
+
+        
+           
+       
+        
+          
 
 
 <% include ./partials/footer %>

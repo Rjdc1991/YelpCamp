@@ -1,33 +1,87 @@
-.thumbnail img {
-    max-width: 200px;
-    max-height: 150px;
-    min-width: 200px;
-    min-height: 150px;
+.nav-item a{
+	
+	color:black;
+	padding:10px;
+}
+
+
+.navbar-brand{
+	
+	color:black;
+}
+
+.navbar{
+	background-color:#fff;
+}
+
+.card.main{
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	
+}
+
+.card.main:hover{
+  opacity: 0.8;
+}
+
+
+
+.card-img-top {
+    
+    max-height: 168px;
+   
+    min-height: 168px;
+}
+
+.card.main{
+	
+	padding:4px;
+	
+}
+
+
+
+
+
+.commentHead{
+	
+	padding-bottom:30px;
+	
+}
+
+
+
+#jumboText {
+	
+	
+	transform: translate(0, -10%);
+	
 }
     
-    .jumbotron {
-    
+    .jumbotron{
+		
+			
+		
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
-    background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-image: url("https://images.unsplash.com/photo-1553161110-da7abad2dbf5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
     text-align:center;
-    color:white;
+    color:black;
+		
   
     }
     
 
-.thumbnail img {
-    width: 1000px;
+#showPics {
+	 max-width:100%; 
+	 min-width:100%; 
+	 max-height:500px; 
+	 min-height:500px;
 }
 
-.thumbnail {
-    padding: 0;
-}
 
-.thumbnail .caption-full {
-    padding: 9px;
-}
 
 #delete {
     
@@ -46,7 +100,49 @@
 }
  
    
+
+  @media only screen and (max-device-width: 480px) {
+      
+	 
+	
+	  #showPics {
+	 max-width:100%; 
+	 min-width:100%; 
+	 max-height:300px; 
+	 min-height:300px;
+	}
+      
     
-    
-    
-    
+	  
+    }
+  
+ @media only screen and (min-device-width: 481px) {
+      
+    }
+
+body{
+	
+	font-family: 'Raleway', sans-serif;
+	padding-top:70px;
+	background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+
+}
+
+.nameSpan{
+	
+	text-transform:capitalize;
+}
+
+ 
+html, body{ 
+  min-height: 100vh;
+  overflow: auto;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
