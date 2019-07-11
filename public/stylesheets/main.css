@@ -3,7 +3,10 @@
 	color:black;
 	padding:10px;
 }
-
+.map{
+	
+	padding-bottom:20px;
+}
 
 .navbar-brand{
 	
@@ -77,8 +80,10 @@
 #showPics {
 	 max-width:100%; 
 	 min-width:100%; 
-	 max-height:500px; 
+	 max-height:650px; 
 	 min-height:500px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
