@@ -13,7 +13,7 @@ var express = require("express"),
     passport = require("passport");
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://rjdc1991:chico55@yelp-f3tgn.mongodb.net/test?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://rjdc1991:**********@yelp-f3tgn.mongodb.net/test?retryWrites=true&w=majority",{
 	
 	useNewUrlParser: true,
 	useCreateIndex: true
